@@ -1,5 +1,6 @@
 # An Anime Game Launcher Flatpak
 
+
 ## Installation
 
 To install the launcher via flatpak you will first have to make sure that you
