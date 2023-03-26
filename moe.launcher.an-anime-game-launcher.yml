@@ -142,7 +142,7 @@ modules:
       - mkdir -p /app/utils/
     sources:
       - type: git
-        url: https://github.com/an-anime-team/an-anime-game-launcher
+        url: https://github.com/cybik/an-anime-game-launcher
         tag: *aagl_tag
       - type: file
         path: moe.launcher.an-anime-game-launcher.metainfo.xml
