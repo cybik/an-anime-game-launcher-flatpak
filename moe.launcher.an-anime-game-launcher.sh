@@ -6,7 +6,7 @@ for i in {0..9}; do
 done
 
 # Change references to old flatpak data dir in config file to new data dir
-sed -i s/moe.launcher.an-anime-game-launcher-gtk/moe.launcher.an-anime-game-launcher/ $XDG_DATA_HOME/anime-game-launcher/config.json
+sed -i s/moe.launcher.an-anime-game-launcher-gtk/moe.launcher.an-anime-game-launcher/ $XDG_DATA_HOME/anime-game-launcher*/config.json
 
 # Modify /etc/hosts to block logging servers
 # This is possible because /etc is a writable tmpfs in flatpak

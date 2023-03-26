@@ -18,7 +18,7 @@ flatpak remote-add --if-not-exists launcher.moe https://gol.launcher.moe/gol.lau
 Now the only thing remaining is to install the launcher
 
 ```sh
-flatpak install launcher.moe moe.launcher.an-anime-game-launcher
+flatpak install launcher.moe moe.launcher.steam.an-anime-game-launcher
 ```
 
 ## Uninstall
@@ -26,13 +26,13 @@ flatpak install launcher.moe moe.launcher.an-anime-game-launcher
 To uninstall the launcher including all the files run the following
 
 ```sh
-flatpak uninstall --delete-data moe.launcher.an-anime-game-launcher
+flatpak uninstall --delete-data moe.launcher.steam.an-anime-game-launcher
 ```
 
 or to keep the files simply run
 
 ```sh
-flatpak uninstall moe.launcher.an-anime-game-launcher
+flatpak uninstall moe.launcher.steam.an-anime-game-launcher
 ```
 
 ## Additional configuration
@@ -49,7 +49,7 @@ mkdir -p $GAME_PATH/prefix $GAME_PATH/game $GAME_PATH/temp
 Then, grant the flatpak permission to access these paths:
 
 ```sh
-flatpak override --user --filesystem=$GAME_PATH moe.launcher.an-anime-game-launcher
+flatpak override --user --filesystem=$GAME_PATH moe.launcher.steam.an-anime-game-launcher
 ```
 
 Then, start the launcher and install the game.
@@ -62,7 +62,7 @@ If you want to unblock the optional servers, set the `NO_BLOCK_PROXY`
 environment variable:
 
 ```sh
-flatpak override --env=NO_BLOCK_PROXY=true moe.launcher.an-anime-game-launcher
+flatpak override --env=NO_BLOCK_PROXY=true moe.launcher.steam.an-anime-game-launcher
 ```
 
 ### MangoHud
@@ -78,7 +78,7 @@ By default, the MangoHud configuration is stored at
 To use the config file from the host system instead, run this command:
 
 ```sh
-flatpak override --filesystem=xdg-config/MangoHud:ro moe.launcher.an-anime-game-launcher
+flatpak override --filesystem=xdg-config/MangoHud:ro moe.launcher.steam.an-anime-game-launcher
 ```
 
 ### Gamescope
@@ -101,5 +101,5 @@ GameMode status, this won't work due to an
 As a workaround, you can run this command:
 
 ```sh
-flatpak override --talk-name=com.feralinteractive.GameMode moe.launcher.an-anime-game-launcher
+flatpak override --talk-name=com.feralinteractive.GameMode moe.launcher.steam.an-anime-game-launcher
 ```

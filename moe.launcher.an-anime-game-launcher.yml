@@ -1,4 +1,4 @@
-app-id: moe.launcher.an-anime-game-launcher
+app-id: moe.launcher.steam.an-anime-game-launcher
 runtime: org.gnome.Platform
 runtime-version: '43'
 add-extensions:
@@ -121,8 +121,8 @@ modules:
       - chmod +x /app/bin/moe.launcher.an-anime-game-launcher
     sources:
       - type: git
-        url: https://github.com/an-anime-team/an-anime-game-launcher
-        tag: &aagl_tag 3.3.0
+        url: https://github.com/cybik/an-anime-game-launcher
+        tag: &aagl_tag 3.4.h
       - type: file
         path: moe.launcher.an-anime-game-launcher.sh
       - cargo-sources.json

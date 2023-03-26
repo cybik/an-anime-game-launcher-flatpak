@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <component type="desktop-application">
   <!-- Copyright 2022 Laurin Neff -->
-  <id>moe.launcher.an-anime-game-launcher</id>
+  <id>moe.launcher.steam.an-anime-game-launcher</id>
   <name>An Anime Game Launcher</name>
   <summary>Play your favorite anime game on Linux</summary>
   <summary xml:lang="de">Spielen Sie Ihr Lieblings-Anime-Spiel auf Linux</summary>
@@ -40,7 +40,7 @@
       <image>https://raw.githubusercontent.com/an-anime-team/an-anime-game-launcher/main/repository/settings-classic.png</image>
     </screenshot>
   </screenshots>
-  <launchable type="desktop-id">moe.launcher.an-anime-game-launcher.desktop</launchable>
+  <launchable type="desktop-id">moe.launcher.steam.an-anime-game-launcher.desktop</launchable>
   <url type="homepage">https://github.com/an-anime-team/an-anime-game-launcher</url>
   <url type="bugtracker">https://github.com/an-anime-team/an-anime-game-launcher/issues</url>
   <project_license>GPL-3.0-or-later</project_license>
