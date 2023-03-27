@@ -22,6 +22,7 @@ finish-args:
   - --socket=x11 # Not fallback-x11, because while the launcher supports Wayland, Wine doesn't (yet)
   - --socket=wayland
   - --socket=pulseaudio
+  - --filesystem=home
   - --filesystem=xdg-run/app/com.discordapp.Discord:create
   - --filesystem=/mnt
   - --filesystem=/media
@@ -113,7 +114,7 @@ modules:
       env:
         CARGO_HOME: ./cargo
     build-commands:
-      - cargo --offline fetch --manifest-path Cargo.toml --verbose
+      - cargo fetch --manifest-path Cargo.toml --verbose
       - cargo --offline build --release --verbose
 
       - cp target/release/anime-game-launcher /app/bin/anime-game-launcher
